@@ -1,16 +1,16 @@
 version: '3.9'
 
 services:
-  EnviarContratoAssinadoTaskcd:
-    image: camworker
-    hostname: EnviarContratoAssinadoTaskcd
+  EnviarContratoAssinado:
+    image: enviarcontratoassinado
+    hostname: EnviarContratoAssinado
     restart: unless-stopped
     build:
       context: .
       dockerfile: ./Dockerfile
     environment:
       - NODE_ENV=production
-      - TOPIC=EnviarContratoAssinadoTaskcd
+      - TOPIC=EnviarContratoAssinadoTask
       - ENG_REST_URL=${CAMUNDA_URL}
       - ENG_REST_USERNAME=${CAMUNDA_USERNAME}
       - ENG_REST_PASSWORD=${CAMUNDA_PASSWORD}

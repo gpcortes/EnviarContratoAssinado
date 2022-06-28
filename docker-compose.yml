@@ -20,9 +20,9 @@ services:
       - MAIL_ACCOUNT=${MAIL_ACCOUNT}
       - MAIL_PASSWORD=${MAIL_PASSWORD}
       - MAIL_FROM=${MAIL_FROM}
-      - FINAN_FTP_HOST=${FINAN_FTP_HOST'}
-      - FINAN_FTP_USER=${FINAN_FTP_USER'}
-      - FINAN_FTP_PASSWD=${FINAN_FTP_PASSWD'}
+      - FINAN_FTP_HOST=${FINAN_FTP_HOST}
+      - FINAN_FTP_USER=${FINAN_FTP_USER}
+      - FINAN_FTP_PASSWD=${FINAN_FTP_PASSWD}
     volumes:
       - ${ACS_DOCS_PATH}/GerenciaContratosDeRPAProcess/outputs:/home/appuser/outputs:rw
 

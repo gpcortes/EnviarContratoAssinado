@@ -6,7 +6,7 @@ class JoomlaStorage:
         self.FINAN_FTP_HOST, self.FINAN_FTP_USER, self.FINAN_FTP_PASSWD = self.__load_env()
         self.ftp = ftplib.FTP(host, user, password)
 
-    def __load_env():
+    def __load_env(self):
         if os.getenv('ENV') != 'production':
             from os.path import join, dirname
             from dotenv import load_dotenv

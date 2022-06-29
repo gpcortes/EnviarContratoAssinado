@@ -41,5 +41,5 @@ COPY ./app /home/appuser
 RUN mkdir /home/appuser/outputs
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
-CMD ["python", "--version"]
+CMD ["python", "main.py"]
 

@@ -4,7 +4,7 @@ import os
 class JoomlaStorage:
     def __init__(self):
         self.FINAN_FTP_HOST, self.FINAN_FTP_USER, self.FINAN_FTP_PASSWD = self.__load_env()
-        self.ftp = ftplib.FTP(host, user, password)
+        self.ftp = ftplib.FTP(self.FINAN_FTP_HOST, self.FINAN_FTP_USER, self.FINAN_FTP_PASSWD)
 
     def __load_env(self):
         if os.getenv('ENV') != 'production':
